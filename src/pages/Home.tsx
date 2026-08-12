@@ -71,11 +71,11 @@ export function Home({ navigate }: HomeProps) {
         <div className="absolute inset-0 bg-grid opacity-30" />
         <div className="absolute inset-0 bg-aurora" />
         <div className="absolute top-1/4 -left-32 h-96 w-96 rounded-full bg-brand-700/20 blur-[140px] animate-pulse-slow" />
-        <div className="absolute bottom-1/4 -right-32 h-96 w-96 rounded-full bg-accent-700/10 blur-[140px] animate-pulse-slow" />
+        <div className="absolute bottom-1/4 -right-32 h-96 w-96 rounded-full bg-brand-700/10 blur-[140px] animate-pulse-slow" />
 
         {/* Floating orbs */}
         <div className="absolute top-32 right-[15%] h-2 w-2 rounded-full bg-brand-400 animate-float" style={{ animationDelay: '0s' }} />
-        <div className="absolute top-1/2 right-[25%] h-1.5 w-1.5 rounded-full bg-accent-400 animate-float" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 right-[25%] h-1.5 w-1.5 rounded-full bg-brand-400 animate-float" style={{ animationDelay: '1.5s' }} />
         <div className="absolute bottom-40 left-[20%] h-2 w-2 rounded-full bg-brand-300 animate-float" style={{ animationDelay: '3s' }} />
 
         <div className="container-page relative z-10">
@@ -400,7 +400,7 @@ export function Home({ navigate }: HomeProps) {
             <div className="relative overflow-hidden rounded-3xl border border-ink-800 bg-gradient-to-br from-ink-900 via-ink-900 to-brand-950/40 p-10 sm:p-16 lg:p-20">
               <div className="absolute inset-0 bg-grid opacity-20" />
               <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-brand-600/20 blur-[100px]" />
-              <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent-700/10 blur-[100px]" />
+              <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-brand-700/10 blur-[100px]" />
 
               <div className="relative max-w-2xl">
                 <h2 className="heading-2 text-white">

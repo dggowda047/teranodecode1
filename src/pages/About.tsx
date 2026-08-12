@@ -117,7 +117,7 @@ export function About({ navigate }: AboutProps) {
             </Reveal>
             <Reveal delay={120}>
               <div className="card card-hover p-8 lg:p-10 h-full group">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-600/15 border border-accent-600/30 text-accent-400 transition-transform duration-500 group-hover:scale-110">
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-600/15 border border-brand-600/30 text-brand-400 transition-transform duration-500 group-hover:scale-110">
                   <Eye className="h-7 w-7" />
                 </div>
                 <h3 className="font-display text-2xl font-bold text-white mt-6">Our Vision</h3>

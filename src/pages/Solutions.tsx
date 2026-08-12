@@ -99,7 +99,7 @@ export function Solutions({ navigate }: SolutionsProps) {
                       <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
                         {sol.services.map((service) => (
                           <div key={service} className="flex items-center gap-2.5 text-sm text-ink-200">
-                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent-600/15 text-accent-400">
+                            <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600/15 text-brand-400">
                               <Check className="h-3 w-3" />
                             </span>
                             {service}

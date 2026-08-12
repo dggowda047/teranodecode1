@@ -124,7 +124,7 @@ export function Contact() {
 
                 {status === 'success' ? (
                   <div className="mt-8 flex flex-col items-center justify-center text-center py-12">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-600/15 border border-accent-600/30 text-accent-400">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-brand-600/15 border border-brand-600/30 text-brand-400">
                       <CheckCircle2 className="h-8 w-8" />
                     </div>
                     <h3 className="font-display text-xl font-bold text-white mt-5">

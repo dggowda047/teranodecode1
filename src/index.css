@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-950 text-ink-100 font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-brand-500/30 text-white;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-brand-500 text-white font-medium text-sm tracking-wide transition-all duration-300 hover:bg-brand-400 hover:shadow-[0_0_30px_-5px_rgba(51,133,252,0.6)] hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-ink-700 text-ink-100 font-medium text-sm tracking-wide transition-all duration-300 hover:border-brand-500 hover:text-white hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-ink-300 font-medium text-sm transition-all duration-300 hover:text-white hover:bg-ink-800;
+  }
+  .card {
+    @apply rounded-2xl border border-ink-800 bg-ink-900/60 backdrop-blur-sm transition-all duration-500;
+  }
+  .card-hover {
+    @apply hover:border-brand-600/50 hover:bg-ink-900 hover:-translate-y-1 hover:shadow-[0_20px_60px_-20px_rgba(28,102,242,0.3)];
+  }
+  .section-label {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-400;
+  }
+  .heading-1 {
+    @apply font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight;
+  }
+  .heading-2 {
+    @apply font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight;
+  }
+  .heading-3 {
+    @apply font-display text-xl sm:text-2xl font-semibold leading-tight;
+  }
+  .body-lg {
+    @apply text-base sm:text-lg leading-relaxed text-ink-300;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-ink-700 bg-ink-900 px-4 py-3 text-sm text-ink-100 placeholder-ink-500 transition-all duration-200 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-300 via-brand-400 to-accent-400;
+  }
+  .text-gradient-animated {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg, #8ec9ff, #59a8ff, #34d399, #59a8ff, #8ec9ff);
+    background-size: 200% auto;
+    animation: gradient 6s ease infinite;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .bg-grid-fine {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .bg-radial-glow {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(28,102,242,0.25), transparent);
+  }
+  .bg-aurora {
+    background:
+      radial-gradient(ellipse 60% 40% at 20% 30%, rgba(28,102,242,0.15), transparent),
+      radial-gradient(ellipse 50% 40% at 80% 60%, rgba(16,185,129,0.08), transparent),
+      radial-gradient(ellipse 70% 50% at 50% 100%, rgba(28,102,242,0.12), transparent);
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .border-gradient {
+    border-image: linear-gradient(135deg, rgba(28,102,242,0.4), rgba(16,185,129,0.2), transparent) 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e405d;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d5474;
+}
